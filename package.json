@@ -1,0 +1,45 @@
+{
+  "name": "students-portal",
+  "version": "1.0.0",
+  "description": "This is code base for placement portal IIT Goa",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "prod-server": "npm run server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/portaliitgoa/students-portal.git"
+  },
+  "author": "Jarnu Girdhar",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/jarnugirdhar/placements-portal",
+  "dependencies": {
+    "archiver": "^3.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "exceljs": "^3.1.0",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "helmet": "^3.21.1",
+    "js-file-download": "^0.4.8",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.6.2",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.1.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "uuid": "^3.3.2",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0",
+    "concurrently": "^4.1.1"
+  }
+}

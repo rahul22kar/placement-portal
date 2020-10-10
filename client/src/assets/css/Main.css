@@ -1,0 +1,29 @@
+.header{
+  background-color: white !important;
+  text-align: center;
+  margin-top: 5vh;
+  height: auto !important;
+}
+
+.logo{
+  height: 11vh !important;
+  width: auto !important;
+  background-color: white !important;
+}
+
+.content{
+  /* background-color: white !important; */
+  min-height: 70vh !important;
+  max-height: auto !important;
+}
+
+.menu{
+  background-color: white !important;
+  margin-top: 2% !important;
+}
+
+.footer{
+  background-color: white !important;
+  display: block !important;
+  text-align: center;
+}
