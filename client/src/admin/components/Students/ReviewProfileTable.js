@@ -17,7 +17,8 @@ class ReviewProfileTable extends Component {
         index: 0,
         searchText: '',
         suggested_changes: '',
-        email: ''
+        email: '',
+        searchValue : 'Name'
     };
 
     getColumnSearchProps = dataIndex => ({
