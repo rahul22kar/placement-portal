@@ -8,6 +8,7 @@ const {Sider} = Layout;
 
 class Sidebar extends Component {
 
+
     render() {
         const {pathname} = this.props.location;
         let selectedKey = [];
@@ -74,6 +75,12 @@ class Sidebar extends Component {
                                     <span>Student Profiles</span>
                                 </Link>
                             </MenuItem>
+                            <MenuItem key = '/company/pre_form'>
+                                <Link to = '/company/pre_form'>
+                                    <Icon type = 'form'/>
+                                    <span>Create Form</span>
+                                </Link>
+                            </MenuItem>
                             <MenuItem key = '/company/contact'>
                                 <Link to = '/company/contact'>
                                     <Icon type = 'contacts'/>
@@ -130,6 +137,12 @@ class Sidebar extends Component {
                                 <span>Student Profiles</span>
                             </Link>
                         </MenuItem>
+                        <MenuItem key = '/company/pre_form'>
+                                <Link to = '/company/pre_form'>
+                                    <Icon type = 'form'/>
+                                    <span>Create Form</span>
+                                </Link>
+                            </MenuItem>
                         <MenuItem key = '/company/contact'>
                             <Link to = '/company/contact'>
                                 <Icon type = 'contacts'/>
