@@ -74,6 +74,12 @@ class Sidebar extends Component {
                                     <span>Student Profiles</span>
                                 </Link>
                             </MenuItem>
+                            <MenuItem key = '/company/JAF'>
+                                <Link to = '/company/JAF'>
+                                    <Icon type = 'idcard'/>
+                                    <span>JAF</span>
+                                </Link>
+                            </MenuItem>
                             <MenuItem key = '/company/contact'>
                                 <Link to = '/company/contact'>
                                     <Icon type = 'contacts'/>
@@ -130,6 +136,12 @@ class Sidebar extends Component {
                                 <span>Student Profiles</span>
                             </Link>
                         </MenuItem>
+                        <MenuItem key = '/company/JAF'>
+                                <Link to = '/company/JAF'>
+                                    <Icon type = 'idcard'/>
+                                    <span>JAF</span>
+                                </Link>
+                            </MenuItem>
                         <MenuItem key = '/company/contact'>
                             <Link to = '/company/contact'>
                                 <Icon type = 'contacts'/>
