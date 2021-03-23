@@ -8,6 +8,7 @@ import {Page, Sidebar, Navbar} from '../components/Layout';
 import Dashboard from './Dashboard/Dashboard';
 import CreateProfile from './CreateProfile';
 import Job from './Jobs';
+import JAF from './JAF';
 import StudentProfiles from './StudentProfiles';
 import Contact from './Contact'
 import CreateForm from './Form/LandingForm';
@@ -58,6 +59,7 @@ class Company extends Component{
                                     <CompanyRoute path={`${this.props.match.url}/dashboard`} component={Dashboard} isMobile={true}/>
                                     <CompanyRoute path={`${this.props.match.url}/profile/create`} component={CreateProfile} isMobile={true}/>
                                     <CompanyRoute path={`${this.props.match.url}/job`} component={Job} isMobile={true}/>
+                                    <CompanyRoute path={`${this.props.match.url}/JAF`} component={JAF} isMobile={true}/>
                                     <CompanyProfileRoute path={`${this.props.match.url}/students`} component={StudentProfiles} isMobile={true}/>
                                     <CompanyRoute path={`${this.props.match.url}/pre_form`} component={CreateForm} isMobile={true}/>
                                     <CompanyRoute path={`${this.props.match.url}/create_form`} component={MainForm} isMobile={true} render = {(props) => <MainForm {...props} />}/>
@@ -76,6 +78,7 @@ class Company extends Component{
                                         <CompanyRoute path={`${this.props.match.url}/dashboard`} component={Dashboard} isMobile={false}/>
                                         <CompanyRoute path={`${this.props.match.url}/profile/create`} component={CreateProfile} isMobile={false}/>
                                         <CompanyRoute path={`${this.props.match.url}/job`} component={Job} isMobile={false}/>
+                                        <CompanyRoute path={`${this.props.match.url}/JAF`} component={JAF} isMobile={false}/>
                                         <CompanyProfileRoute path={`${this.props.match.url}/students`} component={StudentProfiles} isMobile={false}/>
                                         <CompanyRoute path={`${this.props.match.url}/contact`} component={Contact} isMobile={false}/>
                                         <CompanyRoute path={`${this.props.match.url}/pre_form`} component={CreateForm} isMobile={false}/>

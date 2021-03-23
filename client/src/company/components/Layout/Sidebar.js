@@ -75,10 +75,10 @@ class Sidebar extends Component {
                                     <span>Student Profiles</span>
                                 </Link>
                             </MenuItem>
-                            <MenuItem key = '/company/pre_form'>
-                                <Link to = '/company/pre_form'>
-                                    <Icon type = 'form'/>
-                                    <span>Create Form</span>
+                            <MenuItem key = '/company/JAF'>
+                                <Link to = '/company/JAF'>
+                                    <Icon type = 'idcard'/>
+                                    <span>JAF</span>
                                 </Link>
                             </MenuItem>
                             <MenuItem key = '/company/contact'>
@@ -137,10 +137,10 @@ class Sidebar extends Component {
                                 <span>Student Profiles</span>
                             </Link>
                         </MenuItem>
-                        <MenuItem key = '/company/pre_form'>
-                                <Link to = '/company/pre_form'>
-                                    <Icon type = 'form'/>
-                                    <span>Create Form</span>
+                        <MenuItem key = '/company/JAF'>
+                                <Link to = '/company/JAF'>
+                                    <Icon type = 'idcard'/>
+                                    <span>JAF</span>
                                 </Link>
                             </MenuItem>
                         <MenuItem key = '/company/contact'>
