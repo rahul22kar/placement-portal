@@ -11,6 +11,8 @@ import Job from './Jobs';
 import JAF from './JAF';
 import StudentProfiles from './StudentProfiles';
 import Contact from './Contact'
+import CreateForm from './Form/LandingForm';
+import MainForm from './Form/MainForm';
 
 import CompanyRoute from '../../utils/CompanyRoute';
 import * as actionCreators from "../../redux/actions";
@@ -59,6 +61,8 @@ class Company extends Component{
                                     <CompanyRoute path={`${this.props.match.url}/job`} component={Job} isMobile={true}/>
                                     <CompanyRoute path={`${this.props.match.url}/JAF`} component={JAF} isMobile={true}/>
                                     <CompanyProfileRoute path={`${this.props.match.url}/students`} component={StudentProfiles} isMobile={true}/>
+                                    <CompanyRoute path={`${this.props.match.url}/pre_form`} component={CreateForm} isMobile={true}/>
+                                    <CompanyRoute path={`${this.props.match.url}/create_form`} component={MainForm} isMobile={true} render = {(props) => <MainForm {...props} />}/>
                                     <CompanyRoute path={`${this.props.match.url}/contact`} component={Contact} isMobile={true}/>
                                 </Switch>
                             </Page>
@@ -77,6 +81,8 @@ class Company extends Component{
                                         <CompanyRoute path={`${this.props.match.url}/JAF`} component={JAF} isMobile={false}/>
                                         <CompanyProfileRoute path={`${this.props.match.url}/students`} component={StudentProfiles} isMobile={false}/>
                                         <CompanyRoute path={`${this.props.match.url}/contact`} component={Contact} isMobile={false}/>
+                                        <CompanyRoute path={`${this.props.match.url}/pre_form`} component={CreateForm} isMobile={false}/>
+                                        <CompanyRoute path={`${this.props.match.url}/create_form`} component={MainForm} isMobile={false} render = {(props) => <MainForm {...props} />}/>
                                     </Switch>
                                 </Page>
                         </Layout>

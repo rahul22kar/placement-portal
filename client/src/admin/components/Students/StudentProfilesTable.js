@@ -20,14 +20,14 @@ class StudentProfilesTable extends Component {
         email: ''
     };
 
-    getColumnSearchProps = dataIndex => ({
+    getColumnSearchProps = (dataIndex,name) => ({
         filterDropdown: ({setSelectedKeys, selectedKeys, confirm, clearFilters}) => (
             <div style={{padding: 8}}>
                 <Input
                     ref={node => {
                         this.searchInput = node;
                     }}
-                    placeholder={`Search ${dataIndex}`}
+                    placeholder={`Search ${name}`}
                     value={selectedKeys[0]}
                     onChange={e => setSelectedKeys(e.target.value ? [e.target.value] : [])}
                     onPressEnter={() => this.handleSearch(selectedKeys, confirm)}
@@ -134,7 +134,7 @@ class StudentProfilesTable extends Component {
                 key: "name",
                 align: 'center',
                 width: 200,
-                ...this.getColumnSearchProps('first_name'),
+                ...this.getColumnSearchProps('first_name','First Name'),
                 render : (text, row) =>
                     text + " " + row.last_name
             },
@@ -143,7 +143,7 @@ class StudentProfilesTable extends Component {
                 dataIndex: 'roll_number',
                 key: 'roll_number',
                 align: 'center',
-                ...this.getColumnSearchProps('roll_number')
+                ...this.getColumnSearchProps('roll_number','Roll Number')
             },
             {
                 title: "CPI",

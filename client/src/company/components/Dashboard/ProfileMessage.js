@@ -97,11 +97,13 @@ class Main extends Component {
                         title="Create Profile"
                         subTitle="You need to create profile before you can perform any action."
                         extra={
-                            <Button type="primary">
-                                <NavLink to="/company/profile/create">
-                                    Create Profile
-                                </NavLink>
-                            </Button>
+                            <div>
+                                <Button type="primary">
+                                    <NavLink to="/company/profile/create">
+                                        Create Profile
+                                    </NavLink>
+                                </Button>
+                            </div>
                         }
                     />
                 </Content>
